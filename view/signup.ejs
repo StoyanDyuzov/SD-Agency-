@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD/SIGN UP</title>
+    <link href="/css/login.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mahajani&family=Open+Sans&family=Poppins:wght@100;200&family=Roboto:wght@300;400&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a class="logo" href="/">SD</a>
+        <h2 class="logo2">PROPERTY AGENCY</h2>
+    </div>
+
+    <div class="wrapper">
+        <div class="input-div">
+            <form action="/signupdata" method = "post">
+                <h1 class="login-text1">Sign up</h1>
+                <div class="Fullname">
+                    <p class="fullname-text">Full name:</p>
+                    <input type = "text" id ="fullname" name = "fullname"placeholder = "Your Name..." require autocomplete="off" class="input1"></input>
+                </div>
+                
+                <div class="Email">
+                    <p class="email-text">Email:</p>
+                    <input type = "text" id ="e-mail" name = "email" placeholder = "Your E-mail..." require autocomplete="off" class="input1"></input>
+                </div>
+                <div class="Password">
+                    <p class="password-text">Password:</p>
+                    <input type = "password" id ="password" name="password" placeholder = "Password..." class="input1"></input>
+                </div>
+            
+                <button type="submit" class="login-btn">Sign up</button>
+            </form>
+        </div>
+    </div>
+    <div class="x-div" id="x-div">
+        <h1 id="invalid_data"><%= object1%></h1>
+        <button id="x" id = "x" onclick="Remove()">X</button>
+    </div>
+    <script>
+        const invalid_data = document.getElementById("invalid_data")
+        if(invalid_data.innerHTML > 0)
+        {   
+            invalid_data.innerHTML = "invalid data";
+            document.getElementById("x-div").style.display = "flex";
+
+        }
+        function Remove(){
+            document.getElementById("x-div").style.display = "none";
+        }
+    </script>
+</body>
+</html>

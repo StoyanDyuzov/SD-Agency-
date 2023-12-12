@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-bottom: 4px orange solid;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(40,39,1,0.9753151260504201) 0%, rgba(197,137,6,1) 100%);
+}
+.logo{
+    font-size: 60px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+.logo2{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.input-div{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 45px 45px;
+    border: 2px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px lightgrey;
+    padding: 35px 30px;
+    margin-bottom: 70px;
+}
+
+.input-div input{
+    width: 100%;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #f6f6f6;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 4px 15px;
+    font-weight: 900;
+    width: 380px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.input-div p{
+    font-size: 20px;
+    color: #3a3a3a;
+    font-weight: 700;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+.input-div input:focus{
+    outline: none;
+    border: 2px;
+    border-style: solid;
+    border-color: orange;
+}
+.input-div div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+.login-btn{
+    margin-right: 10px;
+    border-radius: 13px;
+    background-color: orange;
+    transition: 0.5s;
+    padding: 10px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border:2px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+.login-btn:hover{
+    background-color: white;
+    cursor: pointer;
+    border:2px;
+    color: orange;
+    border-style: solid;
+    border-color: orange;
+}
+
+.login-text{
+    margin: 15px 15px;
+    color: #3a3a3a;
+    margin-left: 140px;
+    font-size: 40px;
+}
+.signupbtn{
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.input-div a{
+    color: orange;
+    font-size: 20px;
+}
+.login-text1{
+    margin: 15px 15px;
+    color: #3a3a3a;
+    margin-left: 120px;
+    font-size: 40px;
+}
+.logo{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 70px;
+}
+.header{
+    position: relative;
+}
+.x-div{
+    display: none;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    width: 240px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px 20px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(40,39,1,0.9753151260504201) 0%, rgba(197,137,6,1) 100%);
+    border: 2px orange solid;
+}
+
+.x-div h1{
+    color: white;
+    font-size: 25px;
+}
+.x-div button{
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    border: 2px;
+    border-style: solid;
+    border-color: orange;
+}

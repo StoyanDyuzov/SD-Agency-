@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD AGENCY</title>
+    <link href="/css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mahajani&family=Open+Sans&family=Poppins:wght@100;200&family=Roboto:wght@300;400&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper1" id="wrapper1">
+        <div class="header">
+            <div class="section1">
+                <h1 class="logo">SD</h1>
+            </div>
+            <div class="section2">
+                <ul>
+                    <li><a href="#" onclick="Home()">Home</a></li>
+                    <li><a href="#" onclick="Properties()">Properties</a></li>
+                    <li><a href="#" onclick="Contactus()">Contact us</a></li>
+                    <li><a href="/myschedule" onclick="MySchedule()">My Schedule</a></li>
+                    <a class="login" id="login" href="/login">Login</a>
+                    <a class="signup" id="signup" href="/signup">Signup</a>
+                    <h2 class="hello" id = "hello"><%= hello_object %></h2>
+                    <h2 class="user_email" id="user_email"><%=users_email %></h2>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper2" id="wrapper2">
+        <img src="/background-images/banner-01.jpg" id="img-background" class="img-background">
+        
+        <div class="section21">
+            <div class="section21-text">
+                <h2 class="section21-town" id="section21-town">Toronto, </h2>
+                <h2 style="color: orange;" id="section21-town2">Canada</h2>
+            </div>
+            <h1 id="text1">HURRY! GET THE BEST VILLA FOR YOU</h1>
+            
+        </div>
+        <button class="next" id="next" onclick="Next()">></button>
+        <button class="previous" id="previous" onclick="Previous()"><</button>
+    </div>
+
+    <div class="w3" id="wrapper3">
+        <div class="wrapper3">
+            <div class="wrapper3-1"></div>
+            <img src="/imgs-little/featured.jpg" class="wrapper3-img">
+            <div class="wrapper3-2">
+                <h2 class="wrapper3-text-1">|FEATURED</h2>
+                <h1 class="wrapper3-text-2">Best Appartment & Sea View</h1>
+                <button class="wrapper3-text-3" id="wrapper3-text-31" onclick="Hide1()">Best useful links?</button>
+                <div class="wrapper3-text-41" id="wrapper3-text-41"><p>Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                <button class="wrapper3-text-3" id="wrapper3-text-32" onclick="Hide2()">How does this work?</button>
+                <div class="wrapper3-text-42" id="wrapper3-text-42"><p>Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                <button class="wrapper3-text-3" id="wrapper3-text-33" onclick="Hide3()">Why is SD Agency the best?</button>
+                <div class="wrapper3-text-43" id="wrapper3-text-43"><p>Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+            </div>
+
+            <div class="wrapper3-3">
+                <div class="wrapper3-div">
+                    <img class="icon" src="/imgs-little/info-icon-01.png">
+                    <h2 class="details-icon">250 m2</h2>
+                    <p class="details-text">Total Flat Space</p>
+                </div>
+                <div class="wrapper3-div">
+                    <img class="icon" src="/imgs-little/info-icon-02.png">
+                    <h2 class="details-icon">Contract</h2>
+                    <p class="details-text">Contract ready</p>
+                </div>
+                <div class="wrapper3-div">
+                    <img class="icon" src="/imgs-little/info-icon-03.png">
+                    <h2 class="details-icon">Payment</h2>
+                    <p class="details-text">Payment process</p>
+                </div>
+                <div class="wrapper3-div">
+                    <img class="icon" src="/imgs-little/info-icon-01.png">
+                    <h2 class="details-icon">Safety</h2>
+                    <p class="details-text">24/7 Under Control</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper34" id="wrapper34">
+        <div class="video-background">
+            <img src="/video/video-bg.jpg" class="video-photo1">
+            <div class="inside-text">
+                <h2 class="video-view">|VIDEO VIEW</h2>
+                <h1 class="video-text">Get Closer View & Different Feeling</h1>
+            </div>
+            <div class="video-section2">
+                <img src="/video/video-frame.jpg" class="video-photo2">
+                <div class="video-button-div">
+                    <button class="video-button" href="#">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper4" id="wrapper4">
+        <div class="wrappper4-s1">
+            <div class="s1-circle"></div>
+            <h1>34</h1>
+            <div class="inner-s1">
+                <h2>Buildings</h2>
+                <h2>Finished Now</h2>
+            </div>
+        </div>
+        <div class="wrappper4-s1">
+            <div class="s1-circle"></div>
+            <h1>12</h1>
+            <div class="inner-s1">
+                <h2>Years</h2>
+                <h2>Experience</h2>
+            </div>
+        </div>
+        <div class="wrappper4-s1">
+            <div class="s1-circle"></div>
+            <h1>24</h1>
+            <div class="inner-s1">
+                <h2>Awards</h2>
+                <h2>Won 2023</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper5" id="wrapper5">
+
+        <div class="section51">
+            <h2 class="wrapper5text1">|BEST DEAL</h2>
+            <h1 class="wrapper5text2">Find Your Best Deal</h1>
+        </div>
+
+        <div class="section52"> 
+            <h1 class="wrapper5text3">Right Now!</h1>
+            <div class="w5b">
+                <button class="wrapper5button1" id = "wrapper5button1" onclick="Change1()">Appartment</button>
+                <button class="wrapper5button2" id = "wrapper5button2"onclick="Change2()">Villa House</button>
+                <button class="wrapper5button3" id = "wrapper5button3"onclick="Change3()">Penthouse</button>
+            </div>  
+        </div>
+
+        <div class="section53">
+            <div class="section531">
+                <div class="s5">
+                    <p>Total Flat Space</p>
+                    <h1 id="d1">185 m2</h1>
+                </div>
+                <div class="s5">
+                    <p>Floor number</p>
+                    <h1 id="d2">26th</h1>
+                </div>
+                <div class="s5">
+                    <p>Numbers of rooms</p>
+                    <h1 id="d3">4</h1>
+                </div>
+                <div class="s5">
+                    <p>Parking Available</p>
+                    <h1 id="d4">Yes</h1>
+                </div>
+                <div class="s5">
+                    <p>Payment Process</p>
+                    <h1 id="d5">Bank</h1>
+                </div>
+            </div>
+            <div class="section532">
+                <img src="/wrapper5/deal-01.jpg" class="photo3" id="photochange">
+            </div>
+            <div class="section533">
+                <h2 id = "d6">Extra Info About Property</h2>
+                <p id="d7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
+                
+                <button>See More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper6" id="wrapper6">
+        <div class="section61">
+            <img src="/contact/contact-bg.jpg" class="section6image">
+        </div>
+        <div class="section62">
+            <h2 class="text61">|CONTACT US</h2>
+            <h1 class="text62">Get In Touch With Our Agents</h1>
+            <a href="#" class="contactus" onclick="Contactus()">Contact us</a>
+        </div>
+        <div class="section63">
+            <div class="section631">
+                <img src ="/wrapper6/phone-icon.png">
+                <div>
+                    <h1>+359-87-937-1100</h1>
+                    <h2>Phone number</h2>
+                </div>
+            </div>
+            <div class="section632">
+                <img src ="/wrapper6/email-icon.png">
+                <div class="eee">
+                    <h1 class="e-text">sd.property.agency@gmail.com</h1>
+                    <h2>Business email</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper7" id="wrapper7">
+        <div class="contactus1">
+            <img src="/contactus/page-heading-bg.jpg">
+            <div class="contactus11">
+                <div class="contactus111">
+                    <h2>HOME / CONTACT US</h2>
+                </div>
+                <p>CONTACT US</p>
+            </div>
+        </div>
+        <div class="contactus-wrapper">
+            <div class="contactus-section1">
+                
+                <h2 class="contactus-text1">|CONTACT US</h2>
+                <div class="contactus-textdiv">
+                    <h1>Get In Touch</h1>
+                    <h1>With Our Agents</h1>
+                </div>
+                <p class="cu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
+                
+                <div class="contactus-section11">
+                    <img src ="/wrapper6/phone-icon.png">
+                    <div>
+                        <h1>+359-87-937-1100</h1>
+                        <h2>Phone number</h2>
+                    </div>
+                </div>
+                <div class="contactus-section12">
+                    <img src ="/wrapper6/email-icon.png">
+                    <div class="eee">
+                        <h1 class="e-text">sd.property.agency@gmail.com</h1>
+                        <h2>Business email</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contactus-section2">
+                <form action="/contactus" method = "post">
+                    <div class="Fullname">
+                        <p class="fullname-text">Full name:</p>
+                        <input type = "text" id ="fullname" name = "fullname"placeholder = "Your Name..." require autocomplete="off" class="input1"></input>
+                    </div>
+                    
+                    <div class="Email">
+                        <p class="email-text">Email</p>
+                        <input type = "text" id ="e-mail" name = "email" placeholder = "Your E-mail..." require autocomplete="off" class="input1"></input>
+                    </div>
+                    <div class="Subject">
+                        <p class="subject-text">Subject</p>
+                        <input type = "text" id ="subject" name="subject" placeholder = "Subject..."require autocomplete="off" class="input1"></input>
+                    </div>
+                    <div class="Message">
+                        <p class="message-text">Message</p>
+                        <input type = "text" id ="message" name="message" placeholder = "Message..."require autocomplete="off" class="input1"></input>
+                    </div>
+
+                    <button type="submit" class="btnsendmessage">Send Message</button>
+                </form>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="wrapper8" id="wrapper8">
+        <div class="contactus1" id="hide1">
+            <img src="/contactus/page-heading-bg.jpg">
+            <div class="contactus11">
+                <div class="contactus111">
+                    <h2>HOME / PROPERTIES</h2>
+                </div>
+                <p>PROPERTIES</p>
+            </div>
+        </div>
+        
+        <div class="property-show" id = "property-show">
+        </div>
+        <div class="current_property" id = "current_property">
+
+            <div class="schedule_user_input" id="schedule_user_input">
+
+                <div class="s1">
+                    <h1 class="details">USER DETAILS</h1>
+                    <div class="s11">
+                        <h1 class="full_name">Full name: </h1>
+                        <h1 class="user_name" id = "user_name"></h1>
+                    </div>
+                    <div class="s12">
+                        <h1 class="email1">Email: </h1>
+                        <h1 class="user_email1" id="user_email1"></h1>
+                
+                    </div>
+                </div>
+                <div class="s2">
+                    <form method="post" action="/scheduleavisit">
+                        <div class="s22">
+                            <p class="s22-text">SCHEDULE A VISIT:</p>
+                            <input type="date" class="s22-input" id="s22-input" name="input_schedule"> 
+                            <input type="text" class="s22-text1" id = "s22-text1" name="property_data">
+                        </div>
+                        <button type="submit" class="s22-button">Schedule a visit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper9" id="wrapper9">
+        <div class="contactus8">
+            <img src="/contactus/page-heading-bg.jpg">
+            <div class="contactus81">
+                <div class="contactus811">
+                    <h2>HOME / MY SCHEDULE</h2>
+                </div>
+                <p>MY SCHEDULE</p>
+            </div>
+        </div>
+        <div class="w92">
+            <div class="myschedule" id="myschedule">
+
+            </div>
+        </div>
+        
+        <h1 id="data1" class="data"><%= schedule_data%></h1>
+    </div>
+
+    <script>
+        let counter_images_next = 0
+        let counter_images_previous = 0
+        const img_list = ["/background-images/banner-01.jpg","/background-images/banner-02.jpg","/background-images/banner-03.jpg"]
+        const text_list = ["HURRY! GET THE BEST VILLA FOR YOU", "BE QUICK! GET THE BEST VILLA IN TOWN", "ACT NOW! GET THE HIGHEST LEVEL PENTHOUSE"]
+        const text_town1 = ["Toronto, ","Miami, ","Melbourne, "]
+        const text_town2 = ["Canada","South Florida","Australia"]
+
+        const background_img = document.getElementById("img-background")
+        const text1 = document.getElementById("text1")
+        const text21 = document.getElementById("section21-town")
+        const text22 = document.getElementById("section21-town2")
+
+
+        const hello_name = document.getElementById("hello");
+        const users_email = document.getElementById("user_email");
+        let name_user = "a";
+        
+        if(hello_name.innerHTML != "no")
+        {
+            let greed = hello_name.innerHTML;
+            name_user = hello_name.innerHTML
+            document.getElementById("login").style.display = "none";
+            document.getElementById("signup").style.display = "none";
+            hello_name.innerHTML = "Hello, " + greed;
+            hello_name.style.display  = "inline-block"
+        }   
+
+
+        function Next(){
+            counter_images_next += 1
+            for(i=0;i<img_list.length;i++)
+            {
+                if(counter_images_next == 3)
+                {
+                    counter_images_next = 0
+                }
+                if(counter_images_next == i)
+                {
+                    background_img.src = img_list[i]
+                    text1.innerHTML = text_list[i]
+                    text21.innerHTML = text_town1[i]
+                    text22.innerHTML = text_town2[i]
+                }
+            }
+        }
+        
+        function Hide1(){
+            if(document.getElementById("wrapper3-text-41").style.display == "block"){
+                document.getElementById("wrapper3-text-41").style.display = "none"
+            }
+            else{
+                document.getElementById("wrapper3-text-41").style.display = "block"
+            }
+        }
+        function Hide2(){
+            if(document.getElementById("wrapper3-text-42").style.display == "block"){
+                document.getElementById("wrapper3-text-42").style.display = "none"
+            }
+            else{
+                document.getElementById("wrapper3-text-42").style.display = "block"
+            }
+        }
+        function Hide3(){
+            if(document.getElementById("wrapper3-text-43").style.display == "block"){
+                document.getElementById("wrapper3-text-43").style.display = "none"
+            }
+            else{
+                document.getElementById("wrapper3-text-43").style.display = "block"
+            }
+        }
+        
+        const b1 = document.getElementById("wrapper5button1")
+        const b2 = document.getElementById("wrapper5button2")
+        const b3 = document.getElementById("wrapper5button3")
+
+        function Change1(){
+            b1.style.backgroundColor = "white"
+            b1.style.borderColor = "orange"
+            b1.style.color = "orange"
+
+            b2.style.backgroundColor = "orange"
+            b2.style.borderColor = "lightgrey"
+            b2.style.color = "black"
+            b3.style.backgroundColor = "orange"
+            b3.style.borderColor = "lightgrey"
+            b3.style.color = "black"
+            document.getElementById("d1").innerHTML = "185 m2"
+            document.getElementById("d2").innerHTML = "26th"
+            document.getElementById("d3").innerHTML= "4"
+            document.getElementById("d6").innerHTML = "Extra Info About Property"
+            document.getElementById("photochange").src = "/wrapper5/deal-01.jpg"
+            document.getElementById("d7").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen."
+        }
+        function Change2(){
+            b2.style.backgroundColor = "white"
+            b2.style.borderColor = "orange"
+            b2.style.color = "orange"
+
+            b1.style.backgroundColor = "orange"
+            b1.style.borderColor = "lightgrey"
+            b1.style.color = "black"
+            b3.style.backgroundColor = "orange"
+            b3.style.borderColor = "lightgrey"
+            b3.style.color = "black"
+
+            document.getElementById("d1").innerHTML = "250 m2"
+            document.getElementById("d2").innerHTML = "26th"
+            document.getElementById("d3").innerHTML= "5"
+            document.getElementById("d6").innerHTML = "Detail Info About Villa"
+            document.getElementById("photochange").src = "/wrapper5/deal-02.jpg"
+            document.getElementById("d7").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna "
+
+        }
+        function Change3(){
+            b3.style.backgroundColor = "white"
+            b3.style.borderColor = "orange"
+            b3.style.color = "orange"
+
+            b2.style.backgroundColor = "orange"
+            b2.style.borderColor = "lightgrey"
+            b2.style.color = "black"
+            b1.style.backgroundColor = "orange"
+            b1.style.borderColor = "lightgrey"
+            b1.style.color = "black"
+
+            document.getElementById("d1").innerHTML = "320 m2"
+            document.getElementById("d2").innerHTML = "34th"
+            document.getElementById("d3").innerHTML= "6"
+            document.getElementById("d6").innerHTML = "Extra Info About Penthouse"
+            document.getElementById("photochange").src = "/wrapper5/deal-03.jpg"
+            document.getElementById("d7").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing olor sit amet,  gna aliqua quised ipsum suspendisse.Swag fanny pack lyft blog twee. JOMO ethical coppe consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna "
+        }
+
+        function Contactus()
+        {
+            document.getElementById("wrapper7").style.display = "block"
+            document.getElementById("wrapper2").style.display = "none"
+            document.getElementById("wrapper3").style.display = "none"
+            document.getElementById("wrapper4").style.display = "none"
+            document.getElementById("wrapper5").style.display = "none"
+            document.getElementById("wrapper6").style.display = "none"
+            document.getElementById("wrapper34").style.display = "none"
+            document.getElementById("wrapper9").style.display = "none"
+            document.getElementById("wrapper8").style.display = "none"
+
+        }
+        function Home(){
+            document.getElementById("wrapper7").style.display = "none"
+            document.getElementById("wrapper2").style.display = "flex"
+            document.getElementById("wrapper3").style.display = "flex"
+            document.getElementById("wrapper4").style.display = "flex"
+            document.getElementById("wrapper5").style.display = "flex"
+            document.getElementById("wrapper6").style.display = "flex"
+            document.getElementById("wrapper34").style.display = "block"
+            document.getElementById("wrapper8").style.display = "none"
+            document.getElementById("wrapper9").style.display = "none"
+        }
+
+        function ClearInput(){
+            document.getElementById("fullname").value = ""
+            document.getElementById("e-mail").value = ""
+            document.getElementById("subject").value = ""
+            document.getElementById("message").value = ""
+
+        }
+
+        const villa_images = ["/properties/villa/villa-01.jpg","/properties/villa/villa-02.jpg","/properties/villa/villa-03.jpg"];
+        const appartments_images = ["/properties/appartments/appartment-01.jpg","/properties/appartments/appartment-02.jpg","/properties/appartments/appartment-03.jpg",];
+        const penthouse_images = ["/properties/penthouse/penthouse-01.jpg","/properties/penthouse/penthouse-02.jpg","/properties/penthouse/penthouse-03.jpg"]
+        
+        const villa_details = [["Luxury Villa","$2.264.000","18 Old Street Miami, OR 97219","8","8","545m2","3","6 sports"],["Luxury Villa","$1.180.000","54 New Street Florida, OR 27001","6","5","450m2","3","8 sports"],["Luxury Villa","$1.460.000","26 Mid Street Portland, OR 38540","5","4","225m2","3","10 sports"]]
+        const appartment_details = [["Appartment","$584.500","12 Hope Street Miami, OR 12650","4","3","125m2","25th","2 sports"],["Appartment","$925.600","34 Hope Street Florida, OR 42680","4","4","180m2","38th","2 sports"],["Appartment","$450.200","22 Hope Street Miami, OR 16540","3","2","165m2","21th","3 sports"]]
+        const penthouse_details = [["Penthouse","$980.000","14 Mid Street Miami, OR 36450","5","3","450m2","3","8 spots"],["Penthouse","$1.520.000","26 Old Street Miami, OR 12870","10","7","550m2","3","6 spots"],["Penthouse","$3.140.200","34 New Street Miami, OR 24650","10","12","850m2","4","10 sports"]]
+
+        const properties_img =[villa_images, appartments_images, penthouse_images];
+        const properties_details = [villa_details, appartment_details, penthouse_details];
+
+        var pointer = 0;
+        function Properties(){
+            document.getElementById("wrapper7").style.display = "none"
+            document.getElementById("wrapper2").style.display = "none"
+            document.getElementById("wrapper3").style.display = "none"
+            document.getElementById("wrapper4").style.display = "none"
+            document.getElementById("wrapper5").style.display = "none"
+            document.getElementById("wrapper6").style.display = "none"
+            document.getElementById("wrapper34").style.display = "none"
+            document.getElementById("wrapper8").style.display = "block"
+            document.getElementById("property-show").style.display = "flex"
+            document.getElementById("current_property").style.display = "none"
+            document.getElementById("wrapper9").style.display = "none"
+
+            const main_div = document.getElementById("property-show")
+
+            var current_img;
+            var current_details_list;
+            var current_details_list_1;
+
+            if(pointer === 0)
+            {
+                pointer += 1;
+
+                for(i=0; i<properties_img.length; i++)
+                {
+                    for(j=0;j<properties_img[i].length;j++)
+                    {
+                        current_img = properties_img[i][j];
+                        current_details_list = properties_details[i][j];
+
+                        
+                        console.log(current_img)
+                        console.log(current_details_list)
+
+                        let counter = 0;
+                        
+                        var Properties_div = document.createElement("div")
+                        Properties_div.classList.add("properties_div")
+                        Properties_div.setAttribute("id","properties_div")
+                        Properties_div.innerHTML = `
+                        <div class = "property-div-1">
+                            <img class = "property_img" src = "${current_img}">
+                        </div>
+
+                        <div class = "property-div-2">
+                            <h1>${current_details_list[0]}</h1>
+                            <h2>${current_details_list[1]}</h2>
+                        </div>
+
+                        <div class = "property-div-3">
+                            <h1>${current_details_list[2]}</h1>
+                        </div>
+
+                        <div class = "property-div-4">
+                            <h3>Bedrooms: ${current_details_list[3]}</h3>
+                            <h3>Bathrooms: ${current_details_list[4]}</h3>
+                        </div>
+                        <div class = "property-div-5">
+                            <h2>Area: ${current_details_list[5]}</h2>
+                            <h2>Floor: ${current_details_list[6]}</h2>
+                            <h2>Parking: ${current_details_list[7]}</h2>
+                        </div>
+                        <div class = "property-div-6">
+                            <button onclick = "ScheduleAVisit('${current_img}', '${current_details_list[0]}', '${current_details_list[1]}', '${current_details_list[2]}', '${current_details_list[3]}', '${current_details_list[4]}', '${current_details_list[5]}', '${current_details_list[6]}', '${current_details_list[7]}')">Schedule a visit</button>
+                        </div>
+                        `
+                        main_div.appendChild(Properties_div);
+                    }
+                }
+            }
+
+        }
+        var counter_1 = 0;
+
+        function ScheduleAVisit(property_img, property_type, property_price, property_title, property_bedrooms, property_bathrooms, property_area, property_floor, property_parking){
+            document.getElementById("property-show").style.display = "none"
+            document.getElementById("current_property").style.display = "flex"
+            const current_property1 = document.getElementById("current_property");
+
+            if(counter_1 > 0)
+            {
+                document.getElementById("current_property_create").remove();
+                counter_1 = 0;
+            }
+
+
+            if(counter_1 === 0)
+            {
+
+                var current_property_create = document.createElement("div")
+                current_property_create.classList.add("current_property_create")
+                current_property_create.setAttribute("id","current_property_create")
+                current_property_create.innerHTML = `
+                <div class = "pd1">
+                    <img src="${property_img}" class = "pimage">
+                </div>
+
+                <div class = "pd2">
+                    <h1 class = "ptitle">${property_title}</h1>
+                </div>
+
+                <div class = "pd3">
+                    <h1 class = "ptype">${property_type}</h1>
+                    <h2 class = "pprice">${property_price}</h2>
+                </div>
+
+                <div class = "pd4">
+                    <h1>Description:</h1>
+                    <p class = "ptext">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen."</p>
+                </div>
+
+                <div class = "pd5">
+                    <h2>Bedrooms: ${property_bedrooms}</h2>
+                    <h2>Bathrooms: ${property_bathrooms}</h2>
+                </div>
+                <div class = "pd6">
+                    <h2>Area: ${property_area}</h2>
+                    <h2>Floor: ${property_floor}</h2>
+                    <h2>Parking: ${property_parking}</h2>
+                </div>
+                `
+                current_property1.appendChild(current_property_create);
+                counter_1 += 1;
+            }
+
+            const hello_name2 = document.getElementById("hello");
+            const users_email2 = document.getElementById("user_email");
+
+            
+            if(hello_name2.innerHTML != "no")
+            {
+                document.getElementById("schedule_user_input").style.display = "block"
+                document.getElementById("user_email1").innerHTML = users_email2.innerHTML;
+                document.getElementById("user_name").innerHTML = name_user;
+                PropertyData(property_img, property_type, property_price, property_title, property_bedrooms, property_bathrooms, property_area, property_floor, property_parking)
+
+            }
+            else{
+                document.getElementById("schedule_user_input").style.display = "none";
+            }
+
+        }
+
+        function PropertyData(property_img, property_type, property_price, property_title, property_bedrooms, property_bathrooms, property_area, property_floor, property_parking){
+            document.getElementById("s22-text1").value = [property_img, property_type, property_price, property_title, property_bedrooms, property_bathrooms, property_area, property_floor, property_parking]
+        }
+
+        function MySchedule(){
+            document.getElementById("wrapper7").style.display = "none"
+            document.getElementById("wrapper2").style.display = "none"
+            document.getElementById("wrapper3").style.display = "none"
+            document.getElementById("wrapper4").style.display = "none"
+            document.getElementById("wrapper5").style.display = "none"
+            document.getElementById("wrapper6").style.display = "none"
+            document.getElementById("wrapper34").style.display = "none"
+            document.getElementById("wrapper9").style.display = "block"
+            document.getElementById("property-show").style.display = "none"
+            document.getElementById("current_property").style.display = "none"
+            document.getElementById("wrapper8").style.display = "none"
+
+            var data_properties = document.getElementById("data1").innerHTML;
+
+            
+
+            var counter1 = 0;
+            var counter2 = 0;
+            var counter3 = 0;
+            var counter4 = 0;
+
+            var date_1 = "";
+            var data_img = "";
+            var data_type = "";
+            var data_price = "";
+            var data_title = "";
+            var data_bedrooms = "";
+            var data_bathrooms = "";
+            var data_area = "";
+            var data_floor = "";
+            var data_parking = "";
+        
+            var counter_sch = 0;
+            if(data_properties.length > 0)
+            {
+                if(counter_sch > 0)
+                {
+                    document.getElementById("schedule_property_div").remove();
+                }
+                for(i = 0; i < data_properties.length;i++)
+                {
+                    
+                    if(counter1 == 0 && data_properties[i] == "!")
+                    {   
+                        counter1 += 1;
+                    }
+                    else if(counter1 > 0 && data_properties[i] != "#")
+                    {
+                        date_1 += data_properties[i];
+                    }
+                    else if(counter1 > 0 && data_properties[i] == "#")
+                    {
+                        console.log(date_1)
+                        counter1 = 0;
+                        counter2 += 1;
+                    }
+                    else if(counter1 == 0 && counter2 > 0 && data_properties[i] != ",")
+                    {
+                        data_img += data_properties[i];
+                    }
+                    else if(counter2 > 0 && counter1 == 0 && data_properties[i] == "," && counter3 == 0)
+                    {
+                        console.log(data_img)
+                        counter3 += 1;
+                        counter2 = 0;
+                    }
+                    else if(counter3 == 1 && data_properties[i] != ",")
+                    {
+                        data_type += data_properties[i];
+                    }
+                    else if(counter3 == 1 && data_properties[i] == ",")
+                    {
+                        counter3 += 1;
+                        console.log(data_type)
+                    }
+                    else if(counter3 == 2 && data_properties[i] != ",")
+                    {
+                        data_price += data_properties[i];
+                    }
+                    else if(counter3 == 2 && data_properties[i] == ",")
+                    {
+                        counter3 += 1;
+                    }
+                    else if(counter3 == 3 && data_properties[i] != ",")
+                    {
+                        console.log(data_price)
+                        data_title += data_properties[i];
+                    }
+                    else if(counter3 == 3 && data_properties[i] == ",")
+                    {
+                        data_title += data_properties[i]
+                        counter3 += 1;
+                    }
+                    else if(counter3 == 4 && data_properties[i] != ",")
+                    {
+                        data_title += data_properties[i];
+                    }
+                    else if(counter3 == 4 && data_properties[i] == ",")
+                    {
+                        console.log(data_title)
+                        counter3 += 1;
+                    }
+                    
+                    else if(counter3 == 5 && data_properties[i] != ",")
+                    {
+                        data_bedrooms += data_properties[i];
+                    }
+                    else if(counter3 == 5 && data_properties[i] == ",")
+                    {
+                        counter3 += 1;
+                        console.log(data_bedrooms)
+                    }
+                    else if(counter3 == 6 && data_properties[i] != ",")
+                    {
+                        data_bathrooms += data_properties[i];
+                    }
+                    else if(counter3 == 6 && data_properties[i] == ",")
+                    {
+                        console.log(data_bathrooms)
+                        counter3 += 1;
+                    }
+                    else if(counter3 == 7 && data_properties[i] != ",")
+                    {
+                        data_area+= data_properties[i];
+                    }
+                    else if(counter3 == 7 && data_properties[i] == ",")
+                    {
+                        console.log(data_area)
+                        counter3 += 1;
+                    }
+                    else if(counter3 == 8 && data_properties[i] != ",")
+                    {
+                        data_floor += data_properties[i];
+                    }
+                    else if(counter3 == 8 && data_properties[i] == ",")
+                    {
+                        console.log(data_floor)
+                        counter3 += 1;
+                    }
+                    else if(counter3 == 9 && data_properties[i] != ",")
+                    {
+                        if(data_properties[i] == "s")
+                        {
+                            counter4 += 1;
+                            data_parking += data_properties[i]
+                            if(counter4 == 2)
+                            {
+                                console.log(data_parking) 
+                        
+                                counter1 = 0;
+                                counter2 = 0;
+                                counter3 = 0;
+                                counter4 = 0;
+                                console.log(counter1)
+                                console.log(counter2)
+                                console.log(counter3)
+
+                                var schedule_property_div = document.createElement("div")
+                                schedule_property_div.classList.add("schedule_property_div")
+                                schedule_property_div.setAttribute("id","schedule_property_div")
+                                schedule_property_div.innerHTML = `
+                                <div class = "ps1">
+                                    <img src="${data_img}" class = "pimage1">
+                                </div>
+
+                                <div class = "ps2">
+                                    <h1 class = "ptitle1">${data_title}</h1>
+                                </div>
+
+                                <div class = "ps3">
+                                    <h1 class = "ptype1">${data_type}</h1>
+                                    <h2 class = "pprice1">${data_price}</h2>
+                                </div>
+
+                                <div class = "ps4">
+                                    <h2>Bedrooms: ${data_bedrooms}</h2>
+                                    <h2>Bathrooms: ${data_bathrooms}</h2>
+                                </div>
+                                <div class = "ps5">
+                                    <h2>Area: ${data_area}</h2>
+                                    <h2>Floor: ${data_floor}</h2>
+                                    <h2>Parking: ${data_parking}</h2>
+                                </div>
+                                <div class = "ps6">
+                                    <h1 class = "qw">Scheduled at:</h1>
+                                    <h1 class= "d1">${date_1}</h1>
+                                </div>
+                                `
+                                counter_sch += 1;
+                                document.getElementById("myschedule").appendChild(schedule_property_div)
+                                
+
+                                date_1 = "";
+                                data_img = "";
+                                data_type = "";
+                                data_price = "";
+                                data_title = "";
+                                data_bedrooms = "";
+                                data_bathrooms = "";
+                                data_area = "";
+                                data_floor = "";
+                                data_parking = "";
+                                
+                            }
+                        }
+                        else{
+                            data_parking += data_properties[i]
+                        }
+                    }
+                }
+            
+            }
+        }
+        
+
+        
+    </script>
+</body>
+</html>
